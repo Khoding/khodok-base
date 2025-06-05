@@ -5,10 +5,29 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-main,
-header {
-  inline-size: 80rem;
-  margin-inline: auto;
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) min(80rem, 100%) repeat(2, 1fr);
+  margin-block-end: 2rem;
+  padding-inline: 16px;
+
+  > * {
+    grid-column: 3;
+  }
+
+  .half-bleed {
+    grid-column: 2 / -2;
+    width: 100%;
+  }
+
+  .full-bleed {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+
+  [class*='-bleed'] {
+    margin-block: 1.5rem;
+  }
 }
 
 header {

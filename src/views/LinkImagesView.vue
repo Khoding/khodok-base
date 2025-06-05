@@ -1,8 +1,8 @@
 <template>
   <h1>All my images</h1>
 
-  <section class="inline">
-    <h2>Khodok's Logo in different sizes</h2>
+  <h2 class="centered-title">Khodok's Logo in different sizes</h2>
+  <section class="full-bleed inline">
     <figure>
       <img
         src="/assets/khoBlog/img/Ruthinkk/Ruthinkk.png"
@@ -140,9 +140,8 @@
     </figure>
   </section>
 
-  <section class="inline">
-    <h2>Gradients</h2>
-
+  <h2 class="centered-title">Gradients</h2>
+  <section class="full-bleed inline">
     <figure>
       <img
         src="/assets/khoBlog/img/khoBlog-gradient.png"
@@ -168,9 +167,15 @@
 </template>
 
 <style scoped>
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
 .inline figure {
-  display: inline-block;
-  margin-inline: 2rem;
+  width: 32rem;
+  margin-inline: auto;
 
   img {
     margin-inline: auto;
@@ -181,5 +186,10 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.centered-title {
+  margin-block: 2rem 0.5rem;
+  text-align: center;
 }
 </style>
