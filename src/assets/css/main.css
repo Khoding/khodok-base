@@ -1,1 +1,16 @@
 @import '@/assets/css/reset.css';
+@import '@/assets/css/fonts.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+main,
+header {
+  inline-size: 80rem;
+  margin-inline: auto;
+}
+
+header {
+  margin-block-end: 2rem;
+}
