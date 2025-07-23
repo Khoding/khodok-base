@@ -16,7 +16,7 @@
   </div>
   <div>
     <a
-      href="https://www.khodok.com/kho-vue-components/"
+      href="https://khoding.github.io/kho-vue-components/"
       target="_blank"
       rel="noopener noreferrer"
       >Vue Components (I was learning Vue.js)</a
