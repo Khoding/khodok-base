@@ -4,7 +4,6 @@
       <ul>
         <li><RouterLink to="/">Home</RouterLink></li>
         <li><RouterLink to="/link-images">Link Images</RouterLink></li>
-        <li><RouterLink to="/websites">Websites</RouterLink></li>
       </ul>
     </nav>
   </header>
